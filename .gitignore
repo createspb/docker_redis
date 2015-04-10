@@ -1,0 +1,6 @@
+.idea
+
+
+# private files
+private/*
+!private/README
