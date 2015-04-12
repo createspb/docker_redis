@@ -2,7 +2,6 @@ machine:
   services:
     - docker
 
-
 dependencies:
   override:
     - docker build -t "$(cat repo_name.txt):$(git describe --tags)" .
@@ -13,7 +12,6 @@ dependencies:
 test:
   override:
     - echo "Gotta test the image somehow at some point"
-
 
 deployment:
   production:
